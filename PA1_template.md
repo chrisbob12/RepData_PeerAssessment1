@@ -13,15 +13,6 @@ So, to load the data:
 data1 <- read.csv(".\\activity.csv",stringsAsFactors=FALSE)
 ```
 
-```
-## Warning in file(file, "rt"): cannot open file '.\activity.csv': No such
-## file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
 The package dplyr is used throughout this work. If you don't already have it installed you will need to install it on  your system, in order to reproduce the analysis. 
 
 
@@ -120,7 +111,7 @@ pb
 ```
 
 ```
-## [1] 37.3826
+## [1] 206.1698
 ```
 ### Time interval with highest activity:
 
@@ -132,7 +123,7 @@ pbtime
 
 ```
 ##   time_of_day
-## 1       14:21
+## 1       08:35
 ```
 ##Imputed Data
 
@@ -191,7 +182,7 @@ p2
 ```
 
 ```
-## [1] 10751.74
+## [1] 10765.64
 ```
 ###Median total steps/day with imputed data
 
@@ -202,7 +193,7 @@ p3
 ```
 
 ```
-## [1] 10656
+## [1] 10762
 ```
 ##Comparing weekday and weekend activity
 
@@ -244,6 +235,4 @@ xyplot(average_steps ~ time_of_day | workweek,
        scales=list(x=list(format="%H%M")))
 ```
 
-```
-## Error in prettyDate_TMP(x, ...): range too small for min.n
-```
+![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png) 
